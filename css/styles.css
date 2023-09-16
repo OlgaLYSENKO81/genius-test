@@ -32,8 +32,10 @@
 :root {
   --color-primary-dark: rgba(49, 38, 26, 1);
   --color-primary-light: rgba(250, 244, 234, 1);
-  --color-brand-light: rgba(129, 155, 87, 1);
+  --color-secondary-dark: #a18268;
   --color-brand-dark: rgba(70, 89, 41, 1);
+  --color-brand-nornal: rgba(129, 155, 87, 1);
+  --color-brand-light: #cfcfbc;
 }
 
 * {
@@ -43,6 +45,7 @@
 /* Base */
 body {
   color: var(--color-primary-dark);
+  background-color: var(--color-primary-light);
   font-family: 'Poppins', sans-serif;
   font-size: 18px;
   font-weight: 400;
@@ -93,8 +96,8 @@ ul {
   padding: 16px 32px;
   color: var(--color-primary-light);
   font-weight: 600;
-  background-color: var(--color-brand-light);
-  border: 2px solid var(--color-brand-light);
+  background-color: var(--color-brand-nornal);
+  border: 2px solid var(--color-brand-nornal);
   border-radius: 8px;
   cursor: pointer;
 }
@@ -111,7 +114,7 @@ ul {
 }
 
 .link:hover {
-  color: var(--color-brand-light);
+  color: var(--color-brand-nornal);
 }
 
 /* header */
@@ -138,6 +141,10 @@ ul {
 /* Hero srction */
 .hero-section {
   padding: 272px 0;
+  background-image: url('../images/hero-section-background.jpg');
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
 }
 
 .hero-title {
@@ -149,13 +156,13 @@ ul {
 }
 
 .hero-title .accent {
-  color: var(--color-brand-light);
+  color: var(--color-brand-nornal);
 }
 
 /* Advantages section */
 .advantages-section {
   padding: 16px;
-  background-color: var(--color-brand-light);
+  background-color: var(--color-brand-nornal);
 }
 
 .advantages-list {
@@ -174,6 +181,10 @@ ul {
   font-size: 64px;
   font-weight: 900;
   line-height: 1.3;
+}
+
+.section-title.centered {
+  text-align: center;
 }
 
 .section-title .accent {
@@ -200,7 +211,7 @@ ul {
 }
 
 .traditions-text .brand {
-  color: var(--color-brand-light);
+  color: var(--color-brand-nornal);
   font-weight: 600;
 }
 
@@ -214,8 +225,24 @@ ul {
 
 /* Chefs-section */
 .chefs-title {
-  margin-bottom: 80px;
+  max-width: 520px;
+  margin: 0 auto 80px;
 }
+
+.chefs-title::before,
+.chefs-title::after {
+  display: block;
+  width: 352px;
+  border: 2px solid var(--color-primary-light);
+  content: '';
+}
+
+.chef-photo {
+  border-radius: 4px 4px 4px 200px;
+  box-shadow: -16px 16px 0 0 var(--color-primary-light),
+    -16px 16px 0 2px var(--color-secondary-dark);
+}
+
 .chef-title {
   font-weight: 600;
   font-size: 40px;
@@ -233,7 +260,14 @@ ul {
 }
 
 .format-card {
+  height: 444px;
   padding: 24px;
+  background-image: linear-gradient(
+    180deg,
+    rgba(49, 38, 26, 0) 55.21%,
+    rgba(49, 38, 26, 0.71) 72.92%,
+    var(--color-primary-dark) 100%
+  );
   border: 1px solid lightgray; /* remove*/
   border-radius: 16px;
 }
@@ -265,9 +299,17 @@ ul {
 }
 
 .adress-link:hover {
-  color: var(--color-brand-light);
+  color: var(--color-brand-nornal);
 }
 
 .adress-copyright {
   font-size: 14px;
+}
+
+.footer {
+  background-color: var(--color-primary-dark);
+  background-image: url('../images/footer-background.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
