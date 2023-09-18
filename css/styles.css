@@ -233,7 +233,7 @@ ul {
 .chefs-title::after {
   display: block;
   width: 352px;
-  border: 2px solid var(--color-primary-light);
+  border: 2px solid var(--color-brand-light);
   content: '';
 }
 
@@ -285,6 +285,26 @@ ul {
   font-size: 14px;
 }
 
+/* Carousel */
+.carousel-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  fill: var(--color-primary-dark);
+  background-color: transparent;
+  border-radius: 50%;
+  border: 1px solid var(--color-primary-dark);
+  cursor: pointer;
+}
+
+.carousel-button:hover {
+  background-color: var(--color-primary-dark);
+  fill: var(--color-primary-light);
+}
+
 /* Contact sectoin */
 .contact-title {
   margin-bottom: 16px;
@@ -300,6 +320,14 @@ ul {
 
 .adress-link:hover {
   color: var(--color-brand-nornal);
+}
+
+.adress-icon {
+  fill: var(--color-primary-light);
+}
+
+.adress-icon:hover {
+  fill: var(--color-brand-nornal);
 }
 
 .adress-copyright {
