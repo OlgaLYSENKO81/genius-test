@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="container">
         <div class="header-container">
           <nav class="header-nav">
@@ -24,7 +24,9 @@
               <li><a class="link" href="#Contact-section">Контакти</a></li>
             </ul>
           </nav>
-          <button class="button" type="button">Замовити дзвінок</button>
+          <button class="button modal-btn-open" type="button">
+            Замовити дзвінок
+          </button>
         </div>
       </div>
     </header>
@@ -74,8 +76,9 @@
 
       <section class="section" id="chefs-section">
         <div class="container">
-          <h2 class="chefs-title section-title contered">
-            Наші найкращі <span class="accent"> шеф -кухарі</span>
+          <h2 class="chefs-title section-title centered">
+            Наші найкращі <br />
+            <span class="accent"> шеф -кухарі</span>
           </h2>
           <ul class="chefs-list">
             <li class="chefs-iten">
@@ -172,7 +175,7 @@
                 </article>
               </li>
             </ul>
-            <button class="carousel-button" type="button">
+            <button class="carousel-button next" type="button">
               <svg width="16" height="16">
                 <use href="./images/icons.svg#icon-arrow-1"></use>
               </svg>
@@ -265,5 +268,13 @@
         </div>
       </div>
     </footer>
+
+    <div class="backdrop is-hidden">
+      <div class="modal">
+        <button class="modal-btn-close" type="button">Close</button>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
