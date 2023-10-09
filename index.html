@@ -189,7 +189,55 @@
             <div class="contact-forma">
               <h2 class="section-title">Приєднуйся до мережі пекарень</h2>
               <p>Заповни форму, щоб ми звʼязались з тобою!</p>
-              <!-- form -->
+              <form name="contact-forma" autocomplete="off">
+                <div class="form-field">
+                  <label class="form-label visually-hidden" for="user-name"
+                    >Ім'я</label
+                  >
+                  <input
+                    class="form-input"
+                    type="text"
+                    id="user-name"
+                    name="user-name"
+                    placeholder="Ім'я"
+                  />
+                </div>
+
+                <div class="form-field">
+                  <label class="form-label visually-hidden" for="user-tel"
+                    >Телефон</label
+                  >
+                  <input
+                    class="form-input"
+                    type="tel"
+                    id="user-tel"
+                    name="user-tel"
+                    placeholder="Телефон"
+                  />
+                </div>
+
+                <div class="form-field">
+                  <label class="form-label visually-hidden" for="user-email"
+                    >Електронна пошта</label
+                  >
+                  <input
+                    class="form-input"
+                    type="email"
+                    iemald="user-email"
+                    name="user-email"
+                    placeholder="Електронна пошта"
+                  />
+                </div>
+                <button class="form-button button" type="submit">
+                  Замовити дзвінок
+                </button>
+                <p class="firm-terms">
+                  Натискаючи на кнопку я погоджуюсь
+                  <a class="form-terms-link" href="#">
+                    з політикою конфіденційності</a
+                  >
+                </p>
+              </form>
             </div>
             <iframe
               class="contact-map"
@@ -269,9 +317,65 @@
       </div>
     </footer>
 
-    <div class="backdrop is-hidden">
+    <div class="backdrop">
       <div class="modal">
         <button class="modal-btn-close" type="button">Close</button>
+        <h2>Замовити дзвінок</h2>
+        <p>Залишіть заявку та наш спеціаліст зв'яжеться з Вами!</p>
+        <form name="modal-form" autocomplete="off">
+          <div class="form-field">
+            <label class="form-label visually-hidden" for="user-name"
+              >Ім'я</label
+            >
+            <input
+              class="form-input"
+              type="text"
+              id="user-name"
+              name="user-name"
+              placeholder="Ім'я"
+              minlength="2"
+              maxlength="20"
+              required
+            />
+          </div>
+
+          <div class="form-field">
+            <label class="form-label visually-hidden" for="user-tel"
+              >Телефон</label
+            >
+            <input
+              class="form-input"
+              type="tel"
+              id="user-tel"
+              name="user-tel"
+              placeholder="Телефон"
+              pattern="^\+[0-9]{12} "
+            />
+          </div>
+
+          <div class="form-field">
+            <label class="form-label visually-hidden" for="user-email"
+              >Електронна пошта</label
+            >
+            <input
+              class="form-input"
+              type="email"
+              iemald="user-email"
+              name="user-email"
+              placeholder="Електронна пошта"
+              required
+            />
+          </div>
+          <button class="form-button button" type="submit">
+            Замовити дзвінок
+          </button>
+          <p class="firm-terms">
+            Натискаючи на кнопку я погоджуюсь
+            <a class="form-terms-link" href="#">
+              з політикою конфіденційності</a
+            >
+          </p>
+        </form>
       </div>
     </div>
 
