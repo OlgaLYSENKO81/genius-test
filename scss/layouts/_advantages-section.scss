@@ -1,0 +1,16 @@
+.advantages-section {
+  padding: 16px;
+  background-color: var(--color-brand-nornal);
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+  }
+
+  &__item {
+    color: var(--color-primary-light);
+    font-weight: 300;
+    font-size: 20px;
+  }
+}
