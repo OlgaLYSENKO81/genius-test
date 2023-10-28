@@ -12,11 +12,8 @@
     var(--color-primary-dark) 100%
   );
   border-radius: 16px;
+  overflow: hidden;
   transition: transform 0.3s;
-
-  &:hover {
-    transform: scale(1.05);
-  }
 
   &__image {
     position: absolute;
@@ -31,12 +28,13 @@
     font-weight: 600;
     font-size: 24px;
     color: var(--color-primary-light);
-    margin-bottom: 80px;
+    margin-bottom: 16px;
   }
 
   &__text {
     font-weight: 300;
     font-size: 14px;
     color: var(--color-primary-light);
+    line-height: 0.7;
   }
 }

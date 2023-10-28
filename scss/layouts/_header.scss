@@ -3,7 +3,11 @@
   top: 0;
   left: 0;
   width: 100%;
-  padding-top: 32px;
+  padding-top: 16px;
+
+  @media screen and (min-width: $bp-decktop) {
+    padding-top: 32px;
+  }
 
   &__container {
     display: flex;
@@ -38,9 +42,10 @@
   }
 
   &__burger {
-    fill: #fff;
+    fill: var(--color-primary-light);
     background-color: transparent;
     border: none;
+    padding: 0;
 
     @media screen and (min-width: $bp-decktop) {
       display: none;
